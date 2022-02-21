@@ -1,0 +1,11 @@
+// To create a storage account
+
+az storage account create --location "Central US" --name yourstorageaccountname --resource-group yourresourcegroupname --sku "Standard_LRS"
+
+// To create a container
+
+az storage container create --name "Yourcontainername" --account-name= yourstorageaccountname --account-key=yourstorageaccountkey
+
+// To upload a file
+
+az storage blob upload --file "Filelocation+FileName" --container-name "Yourcontainername" --name "Filename" --account-name=yourstorageaccountname --account-key=yourstorageaccountkey
